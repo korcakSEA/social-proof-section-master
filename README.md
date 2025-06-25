@@ -40,7 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/korcakSEA/social-proof-section-master.git)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -68,8 +68,28 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.background__test{
+    max-width: 375px;
+    height:1530px;
+    border: 1px solid red;
+
+    background-image: url('/images/bg-pattern-top-mobile.svg'), 
+                      url('/images/bg-pattern-bottom-mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+@media (min-width:800px) {
+    .background__test {
+        max-width: 1400px;
+        height: 800px;
+        border: 1px solid blue;
+
+        background-image: url('/images/bg-pattern-top-desktop.svg'), 
+                          url('/images/bg-pattern-bottom-desktop.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+    }
 }
 ```
 ```js
