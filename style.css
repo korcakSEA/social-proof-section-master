@@ -31,12 +31,10 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: min(90%, 1150px);
-    margin: 0 auto;
-    border: 1px solid black;
+html{
+    font-family: var(--font-primary);
+    font-size: var(--primary-font-size);
 }
-
 
 
 .background__test{
@@ -49,6 +47,46 @@
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
 
+
+}
+
+.container {
+    width: min(87.5%, 1150px);
+    margin: 0 auto;
+    padding-block: 5rem;
+    border: 1px solid black;
+}
+
+/* Header */
+.header{
+    text-align:center;
+    letter-spacing: -1.2px;
+    margin-bottom: 2.5rem;
+}
+
+.header h2{
+    color: var(--Very-Dark-Magenta);
+    font-size: 3rem;
+    margin-bottom: 1.125rem;
+}
+
+.header p{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 1.35rem;
+    font-weight: var(--weight-500);
+    line-height: 1.5;
+}
+
+/* Rating */
+.rating-box{
+    background-color: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+}
+
+
+/* Testimonial */
+.container__cards{
+    background-color: var(--Very-Dark-Magenta);
 }
 
 @media (min-width:800px) {
@@ -61,6 +99,11 @@
                           url('./images/bg-pattern-bottom-desktop.svg');
         background-repeat: no-repeat, no-repeat;
         background-position: top left, bottom right;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
 }
